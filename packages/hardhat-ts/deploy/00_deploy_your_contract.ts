@@ -9,12 +9,12 @@ const func: DeployFunction = async (hre: HardhatRuntimeEnvironmentExtended) => {
   await deploy('DiceGame', {
     // Learn more about args here: https://www.npmjs.com/package/hardhat-deploy#deploymentsdeploy
     from: deployer,
-    value: ethers.utils.parseEther(".05"),
+    value: ethers.utils.parseEther("0.05"),
     log: true,
   });
 
   // Getting a previously deployed contract
-  const DiceGame = await ethers.getContract("DiceGame", deployer);
+ const DiceGame = await ethers.getContract("DiceGame", deployer);
 
 };
 export default func;

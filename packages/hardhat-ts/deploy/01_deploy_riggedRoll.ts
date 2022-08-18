@@ -22,7 +22,7 @@ const func: DeployFunction = async (hre: HardhatRuntimeEnvironmentExtended) => {
     // Getting a previously deployed contract
     const riggedRoll = await ethers.getContract("RiggedRoll", deployer);
 
-   // const ownershipTransaction = await riggedRoll.transferOwnership("** YOUR FRONTEND ADDRESS **");
+   const ownershipTransaction = await riggedRoll.transferOwnership("0xC635dC7e540d384876aC4D6178D9971241b8383B");
 
 };
 export default func;
